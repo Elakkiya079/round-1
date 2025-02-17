@@ -92,13 +92,13 @@ const HierarchicalTable = () => {
                 <input type="number" id={`input-${category.id}`} />
               </td>
               <td>
-                <button onClick={() => updateValue(category.id, "percent", parseFloat(document.getElementById(`input-${category.id}`).value || 0))}>
+                <button className='allocation-button' onClick={() => updateValue(category.id, "percent", parseFloat(document.getElementById(`input-${category.id}`).value || 0))}>
                   %
                 </button>
               </td>
               <td>
-                <button onClick={() => updateValue(category.id, "value", parseFloat(document.getElementById(`input-${category.id}`).value || 0))}>
-                  Whole
+                <button className='allocation-button' onClick={() => updateValue(category.id, "value", parseFloat(document.getElementById(`input-${category.id}`).value || 0))}>
+                  Button 2
                 </button>
               </td>
               <td>{category.variance ? `${category.variance}%` : "0%"}</td>
@@ -112,12 +112,12 @@ const HierarchicalTable = () => {
                     <input type="number" id={`input-${child.id}`} />
                   </td>
                   <td>
-                    <button onClick={() => updateValue(child.id, "percent", parseFloat(document.getElementById(`input-${child.id}`).value || 0))}>
+                    <button className='allocation-button' onClick={() => updateValue(child.id, "percent", parseFloat(document.getElementById(`input-${child.id}`).value || 0))}>
                       %
                     </button>
                   </td>
                   <td>
-                    <button onClick={() => updateValue(child.id, "value", parseFloat(document.getElementById(`input-${child.id}`).value || 0))}>
+                    <button className='allocation-button' onClick={() => updateValue(child.id, "value", parseFloat(document.getElementById(`input-${child.id}`).value || 0))}>
                       Button2
                     </button>
                   </td>
